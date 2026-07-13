@@ -13,14 +13,14 @@ public class SpringBootJdbcApplication {
 
         ApplicationContext context = SpringApplication.run(SpringBootJdbcApplication.class, args);
 
-        Student s1 = context.getBean(Student.class);
-        s1.setId(111);
-        s1.setName("Kunal Kamra");
-        s1.setTech("BlockChain, Java, Python");
+//        Student s1 = context.getBean(Student.class);
+//        s1.setId(111);
+//        s1.setName("Kunal Kamra");
+//        s1.setTech("BlockChain");
 
         StudRepo repo = context.getBean(StudRepo.class);
 
-        repo.save(s1);
+//        repo.save(s1);
 
         System.out.println(repo.findAll());
 
